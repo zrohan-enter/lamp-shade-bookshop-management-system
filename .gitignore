@@ -1,0 +1,19 @@
+# Sensitive config
+config.php
+.env
+
+# Ignore full DB dumps by default (keep schema.sql instead)
+!schema.sql
+
+# OS / editor
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+*.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+vendor/
