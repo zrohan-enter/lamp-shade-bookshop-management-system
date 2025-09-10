@@ -1,249 +1,139 @@
-<!-- Improved compatibility of back to top link -->
+````markdown
+# Lamp Shade: Bookshop Management System
 
-<a id="readme-top"></a>
+![Project Logo](images/screenshot1.png)
 
-<!-- PROJECT SHIELDS -->
+[![GitHub stars](https://img.shields.io/github/stars/your-github-username/lamp-shade-bookshop-management-system)](https://github.com/your-github-username/lamp-shade-bookshop-management-system/stargazers) [![GitHub forks](https://img.shields.io/github/forks/your-github-username/lamp-shade-bookshop-management-system)](https://github.com/your-github-username/lamp-shade-bookshop-management-system/network/members) [![GitHub issues](https://img.shields.io/github/issues/your-github-username/lamp-shade-bookshop-management-system)](https://github.com/your-github-username/lamp-shade-bookshop-management-system/issues) [![GitHub license](https://img.shields.io/github/license/your-github-username/lamp-shade-bookshop-management-system)](LICENSE.txt)
 
-contributors−url
-forks−url
-stars−url
-issues−url
-license−url
-linkedin−url
-<!-- PROJECT LOGO -->
+## Table of Contents
+- [About](#about)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
-<br />
-<div align="center">
-<a href="https://github.com/github_username/lamp-shade-bookshop-management-system">
-<img src="images/logo.png" alt="Logo" width="80" height="80">
-</a>
+## About
 
-<h3 align="center">Lamp Shade: Bookshop Management System</h3>
+"Lamp Shade Stories" is a full-featured online bookstore built with PHP, MySQL and XAMPP. It supports customer registration and login, live AJAX search suggestions, session-based shopping cart, atomic checkout transactions, admin dashboards for inventory, orders and analytics, and printable receipts.
 
-<p align="center">
-A secure and feature-rich e-commerce web application built on the LAMP stack for online book retail.
-<br />
-<a href="https://github.com/github_username/lamp-shade-bookshop-management-system"><strong>Explore the docs »</strong></a>
-<br />
-<br />
-<a href="#usage">View Demo</a>
-·
-<a href="https://www.google.com/search?q=https://github.com/github_username/lamp-shade-bookshop-management-system/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-·
-<a href="https://www.google.com/search?q=https://github.com/github_username/lamp-shade-bookshop-management-system/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-</p>
-</div>
+Strong focus on security: password hashing (PASSWORD_DEFAULT), input sanitization, and transaction integrity.
 
-About The Project
-Lamp Shade Stories is a full-featured e-commerce solution designed for book purchasing. It delivers:
+### Features
+- Customer registration & login (secure hashing)
+- Live search suggestions (AJAX)
+- Persistent shopping cart (sessions)
+- Atomic checkout transactions (BEGIN/COMMIT/ROLLBACK)
+- Admin dashboard: manage books, orders, analytics
 
-A customer-facing interface for browsing, searching, and buying books.
+## Built With
 
-An admin dashboard for inventory management, order fulfillment, sales analytics, and receipt generation.
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![Apache](https://img.shields.io/badge/Apache-FCC624?style=for-the-badge&logo=apache&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Security-first design with password hashing, input sanitization, and transaction-safe checkout.
+## Getting Started
 
-Core goals:
+### Prerequisites
+- PHP >= 7.x
+- MySQL
+- XAMPP or LAMP stack
+- Web browser
 
-Provide a smooth, intuitive book-shopping experience.
+### Installation
+1. Clone the repo:
+```bash
+git clone https://github.com/your-github-username/lamp-shade-bookshop-management-system.git
+````
 
-Ensure reliable, secure backend operations for administrators.
+2. Import the database schema:
 
-Build a scalable and modular system for future enhancements.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Built With
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Getting Started
-Prerequisites
-XAMPP (PHP ≥ 8, MySQL, Apache)
-
-Web browser
-
-Git
-
-Installation
-Clone the repo:
-
-git clone [https://github.com/zrohan-enter/lamp-shade-bookshop-management-system.git](https://github.com/zrohan-enter/lamp-shade-bookshop-management-system.git)
-
-
-Import the database schema into MySQL:
-
+```bash
 mysql -u root -p bookshop_db < schema.sql
+```
 
+3. Copy `config.sample.php` → `config.php` and set DB credentials. **Do not commit real credentials**. Make sure `config.php` is included in `.gitignore`.
+4. Place project in `htdocs/` (XAMPP) and open in your browser:
 
-Configure the application:
+```
+http://localhost/lamp-shade-bookshop-management-system/
+```
 
-Copy config.sample.php to config.php.
+## Usage
 
-Open config.php and add your MySQL database credentials.
+### Home Page
 
-Run the application:
+![Home Page](images/screenshot1.png)
 
-Place the project folder in your htdocs directory.
+### Live Search Suggestions
 
-Start Apache and MySQL in your XAMPP control panel.
+![Live Search Suggestions](images/screenshot2.png)
 
-Open your web browser and navigate to:
+### Admin Login
 
-http://localhost/bookshop_management/
+![Admin Login](images/screenshot3.png)
 
+### Customer Login
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+![Customer Login](images/screenshot4.png)
 
-Usage
-Here are some screenshots of the core features of the system:
+### Shopping Cart
 
-1. Home Page
+![Shopping Cart](images/screenshot5.png)
 
-2. Live Search Suggestions
+### Order History
 
-3. Admin Login
+![Order History](images/screenshot6.png)
 
-4. Customer Login
+### Admin Analytics
 
-5. Shopping Cart
+![Admin Analytics](images/screenshot7.png)
 
+### Manage Books
 
+![Manage Books](images/screenshot8.png)
 
+### Manage Orders
 
+![Manage Orders](images/screenshot9.png)
 
+### Sales Receipt
 
+![Sales Receipt](images/screenshot10.png)
 
+## Roadmap
 
+* [ ] Payment gateway integration
+* [ ] Mobile app version
+* [ ] Cloud deployment
+* [ ] Supervisor review and report link
 
+## Contributing
 
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-6. Order History
+![Contributors](https://contrib.rocks/image?repo=https://github.com/your-github-username/lamp-shade-bookshop-management-system)
 
-7. Admin Analytics
+## License
 
-8. Manage Books
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-9. Manage Orders
+## Contact
 
-10. Sales Receipt
+Zawed Bin Tariq - [zawed.tariq@northsouth.edu](mailto:zawed.tariq@northsouth.edu)
+Project Link: [https://github.com/your-github-username/lamp-shade-bookshop-management-system](https://github.com/your-github-username/lamp-shade-bookshop-management-system)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Zawed%20Tariq-blue?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/zawed-tariq)
 
+## Acknowledgments
 
+* Supervisor: Dr. Rafiqul Islam
+* University: North South University
+* Inspired by Best-README-Template style
 
-
-
-
-
-
-
-
-
-For more details and full documentation, please refer to the project report.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Roadmap
- Secure authentication & authorization
-
- Book catalog & search
-
- Cart & checkout with transactions
-
- Admin analytics & management
-
- Payment gateway integration
-
- Native mobile app
-
- Cloud deployment
-
-See the open issues for a full list of proposed features.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Contributing
-Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-License
-Distributed under the MIT License. See LICENSE.txt for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Contact
-Zawed Bin Tariq
-
-📧 zawed.tariq@northsouth.edu
-
-Project Link: https://github.com/github_username/lamp-shade-bookshop-management-system
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Acknowledgments
-Dr. Rafiqul Islam (Supervisor)
-
-North South University, CSE Department
-
-Open-source LAMP community
-
-Contributors to security best practices
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-<!-- https://www.google.com/search?q=https://www.markdownguide.org/basic-syntax/%23reference-style-links -->
-
-: #
-
-
-contributors−url
-: https://www.google.com/search?q=https://github.com/github_username/lamp-shade-bookshop-management-system/graphs/contributors
-
-
-: #
-
-
-forks−url
-: https://www.google.com/search?q=https://github.com/github_username/lamp-shade-bookshop-management-system/network/members
-
-
-: #
-
-
-stars−url
-: https://www.google.com/search?q=https://github.com/github_username/lamp-shade-bookshop-management-system/stargazers
-
-
-: #
-
-
-issues−url
-: https://www.google.com/search?q=https://github.com/github_username/lamp-shade-bookshop-management-system/issues
-
-
-: #
-
-
-license−url
-: https://www.google.com/search?q=https://github.com/github_username/lamp-shade-bookshop-management-system/blob/main/LICENSE.txt
-
-
-: #
-
-
-linkedin−url
-: https://www.google.com/search?q=https://www.linkedin.com/in/zawedtariq/
-
-
-: #
+```
+```
