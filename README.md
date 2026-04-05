@@ -1,20 +1,19 @@
-````markdown
 # Lamp Shade: Bookshop Management System
 
-![Project Logo](images/screenshot1.png)
 
-[![GitHub stars](https://img.shields.io/github/stars/your-github-username/lamp-shade-bookshop-management-system)](https://github.com/your-github-username/lamp-shade-bookshop-management-system/stargazers) [![GitHub forks](https://img.shields.io/github/forks/your-github-username/lamp-shade-bookshop-management-system)](https://github.com/your-github-username/lamp-shade-bookshop-management-system/network/members) [![GitHub issues](https://img.shields.io/github/issues/your-github-username/lamp-shade-bookshop-management-system)](https://github.com/your-github-username/lamp-shade-bookshop-management-system/issues) [![GitHub license](https://img.shields.io/github/license/your-github-username/lamp-shade-bookshop-management-system)](LICENSE.txt)
+
+   
 
 ## Table of Contents
-- [About](#about)
-- [Built With](#built-with)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
+- About
+- Built With
+- Getting Started
+- Usage
+- Roadmap
+- Contributing
+- License
+- Contact
+- Acknowledgments
 
 ## About
 
@@ -31,7 +30,8 @@ Strong focus on security: password hashing (PASSWORD_DEFAULT), input sanitizatio
 
 ## Built With
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![Apache](https://img.shields.io/badge/Apache-FCC624?style=for-the-badge&logo=apache&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+
 
 ## Getting Started
 
@@ -43,64 +43,58 @@ Strong focus on security: password hashing (PASSWORD_DEFAULT), input sanitizatio
 
 ### Installation
 1. Clone the repo:
-```bash
-git clone https://github.com/your-github-username/lamp-shade-bookshop-management-system.git
-````
+bash git clone https://github.com/zrohan-enter/lamp-shade-bookshop-management-system.git 
 
 2. Import the database schema:
 
-```bash
-mysql -u root -p bookshop_db < schema.sql
-```
+bash mysql -u root -p bookshop_db < bookshop_db.sql 
 
-3. Copy `config.sample.php` → `config.php` and set DB credentials. **Do not commit real credentials**. Make sure `config.php` is included in `.gitignore`.
-4. Place project in `htdocs/` (XAMPP) and open in your browser:
+3. Copy config.sample.php → config.php and set DB credentials. Do not commit real credentials. Make sure config.php is included in .gitignore.
+4. Place project in htdocs/ (XAMPP) and open in your browser:
 
-```
-http://localhost/lamp-shade-bookshop-management-system/
-```
+ http://localhost/lamp-shade-bookshop-management-system/ 
 
 ## Usage
 
 ### Home Page
 
-![Home Page](images/screenshot1.png)
+
 
 ### Live Search Suggestions
 
-![Live Search Suggestions](images/screenshot2.png)
+
 
 ### Admin Login
 
-![Admin Login](images/screenshot3.png)
+
 
 ### Customer Login
 
-![Customer Login](images/screenshot4.png)
+
 
 ### Shopping Cart
 
-![Shopping Cart](images/screenshot5.png)
+
 
 ### Order History
 
-![Order History](images/screenshot6.png)
+
 
 ### Admin Analytics
 
-![Admin Analytics](images/screenshot7.png)
+
 
 ### Manage Books
 
-![Manage Books](images/screenshot8.png)
+
 
 ### Manage Orders
 
-![Manage Orders](images/screenshot9.png)
+
 
 ### Sales Receipt
 
-![Sales Receipt](images/screenshot10.png)
+
 
 ## Roadmap
 
@@ -112,28 +106,25 @@ http://localhost/lamp-shade-bookshop-management-system/
 ## Contributing
 
 1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (git checkout -b feature/AmazingFeature)
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
+4. Push to the branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
-![Contributors](https://contrib.rocks/image?repo=https://github.com/your-github-username/lamp-shade-bookshop-management-system)
+
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Contact
 
-Zawed Bin Tariq - [zawed.tariq@northsouth.edu](mailto:zawed.tariq@northsouth.edu)
-Project Link: [https://github.com/your-github-username/lamp-shade-bookshop-management-system](https://github.com/your-github-username/lamp-shade-bookshop-management-system)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Zawed%20Tariq-blue?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/zawed-tariq)
+Zawed Bin Tariq - zawed.tariq@northsouth.edu
+Project Link: https://github.com/zrohan-enter/lamp-shade-bookshop-management-system
+
 
 ## Acknowledgments
 
 * Supervisor: Dr. Rafiqul Islam
 * University: North South University
 * Inspired by Best-README-Template style
-
-```
-```
